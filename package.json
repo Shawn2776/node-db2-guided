@@ -6,10 +6,10 @@
         "start": "node index.js",
         "server": "nodemon index.js",
         "ketchup": "git fetch && git reset --hard origin/lecture",
-        "mu":"knex migrate:up", /*migrate up*/
+        "mu":"knex migrate:up", 
         "md":"knex migrate:down",
-        "ml":"knex migrate:down",
-        "mr":"knex migrate:down"
+        "ml":"knex migrate:latest",
+        "mr":"knex migrate:rollback"
     },
     "repository": {
         "type": "git",
