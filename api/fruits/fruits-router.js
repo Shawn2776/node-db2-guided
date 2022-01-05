@@ -36,7 +36,7 @@ router.post('/', (req, res) => {
     })
     .catch(err => {
       console.log('POST error', err);
-      res.status(500).json({ message: "Failed to store data" });
+      res.status(500).json({ message: err.message });
     });
 });
 
